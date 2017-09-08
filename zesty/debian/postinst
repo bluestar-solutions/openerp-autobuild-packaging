@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
-pip install --upgrade "GitPython>=2.1.3,virtualenv==15.0.1"
+pip install --upgrade pip
+pip install --upgrade GitPython>=2.1.3,virtualenv==15.0.1
 
 activate-global-python-argcomplete
 
