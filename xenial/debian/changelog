@@ -1,5 +1,11 @@
-openerp-autobuild (develop) xenial; urgency=medium
+openerp-autobuild (2.2~rc1) xenial; urgency=medium
 
-  * Development
+  * Release 2.2~rc1
+
+ -- Hervé Martinet <hmartinet@bss-laptop12>  Fri, 08 Sep 2017 10:26:58 +0200
+
+openerp-autobuild (2.1) xenial; urgency=medium
+
+  * Release 2.1
 
  -- Bluestar Solutions Sàrl <devs@blues2.ch>  Mon, 20 Apr 2015 16:33:50 +0200
