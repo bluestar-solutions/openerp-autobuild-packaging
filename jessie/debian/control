@@ -2,15 +2,15 @@ Source: openerp-autobuild
 Section: python
 Priority: optional
 Maintainer: Bluestar Solutions Sàrl, <info@blues2.ch>
-Build-Depends: debhelper (>= 7),
-               python (>= 2.7), python (<< 2.8)
-Standards-Version: 3.9.4
-X-Python-Version: >= 2.7, << 2.8
+Build-Depends: debhelper (>= 7~), python-all
+Build-Depends-Indep: python-pip
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.7
 
 Package: openerp-autobuild
 Architecture: all
 Section: python
-Depends: python (>= 2.7~), python (<< 2.8~), ${misc:Depends},
+Depends: python2.7, ${misc:Depends}, ${python:Depends},
     bzr, git,
     libpq-dev, python-psycopg2, python-dev, libldap2-dev,
     libsasl2-dev, libxml2-dev, libxslt-dev, libjpeg8-dev, zlib1g-dev,
