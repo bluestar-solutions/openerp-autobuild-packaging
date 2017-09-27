@@ -1,7 +1,8 @@
 #!/usr/bin/make -f
 
 %:
-    dh $@ --with python2
+	dh $@ --with python2
 
 override_dh_auto_install:
-    pip install --target=src/lib GitPython>=2.1.3 virtualenv==15.0.1
+	pip install --target=src/lib -r debian/requirements.txt
+

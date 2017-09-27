@@ -17,8 +17,7 @@ Depends: python (>= 2.7~), python (<< 2.8~), ${misc:Depends},
     python-jsonschema (>= 0.7~), python-argcomplete (>= 0.5~), libjpeg8-dev,
     zlib1g-dev
 Provides: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
-Conflicts: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7,
-    python-virtualenv, virtualenv, python-git
+Conflicts: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Replaces: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Description: Automatically build and run openerp in virtualenv
  This tool is made for OpenERP modules developers. It manages the dependencies

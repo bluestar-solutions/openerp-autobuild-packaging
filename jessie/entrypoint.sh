@@ -14,5 +14,3 @@ dch -M -l "~b`date +%Y%m%d%H%M`~jessie" "Build `date +%Y%m%d%H%M`"
 dch -M -r --distribution jessie-backports ""
 cp debian/changelog /release/
 debuild -i -us -uc -b
-cd ..
-cp *.deb /release/
