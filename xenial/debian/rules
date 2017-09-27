@@ -4,5 +4,6 @@
 	dh $@ --with python2
 
 override_dh_auto_install:
+	apt-get install -y python-pip
 	pip install --target=src/lib -r debian/requirements.txt
 
