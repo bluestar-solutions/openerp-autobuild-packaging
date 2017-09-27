@@ -3,5 +3,6 @@
 activate-global-python-argcomplete
 
 chmod a+rwx /var/oebuild
+chmod +x /usr/lib/oebuild/openerp_autobuild.sh
 
 #DEBHELPER#
