@@ -1,13 +1,5 @@
 #!/usr/bin/make -f
 
-VENV=./debian/venv
-PIP=$(VENV)/bin/pip
-
 %:
 	dh $@ --with python2
-
-override_dh_auto_install:
-	python -m virtualenv --system-site-packages $(VENV)
-	$(PIP) install --proxy `echo "$http_proxy"` --target=src/lib -r debian/requirements.txt
-	rm -r $(VENV)
 
