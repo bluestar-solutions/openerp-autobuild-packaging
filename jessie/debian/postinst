@@ -1,8 +1,8 @@
 #!/bin/bash -e
-
+    
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
-pip install --upgrade "jsonschema" "argcomplete" "lxml"
+pip install --upgrade "virtualenv" "GitPython>=0.3.6" "jsonschema" "argcomplete"
 
 activate-global-python-argcomplete
 

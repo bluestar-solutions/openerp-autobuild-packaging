@@ -1,10 +1,10 @@
-openerp-autobuild (2.2~rc1) wheezy; urgency=medium
+openerp-autobuild (2.2~rc1) UNRELEASED; urgency=medium
 
   * Release 2.2~rc1
 
- -- Hervé Martinet <hmartinet@bss-laptop12>  Fri, 08 Sep 2017 10:25:31 +0200
+ -- Bluestar Solutions Sàrl, <info@blues2.ch>  Sun, 10 Sep 2017 14:36:00 +0200
 
-openerp-autobuild (2.1) wheezy; urgency=medium
+openerp-autobuild (2.1) wheezy-backports; urgency=medium
 
   * Release 2.1
 
