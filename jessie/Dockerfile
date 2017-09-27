@@ -1,7 +1,6 @@
 FROM debian:jessie
 
 VOLUME /build
-VOLUME /release
 
 ENV TZ=Europe/Zurich
 ENV DEBIAN_FRONTEND noninteractive
@@ -9,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     git-buildpackage \
     git \
-    lsb-release
+    lsb-release \
+    python-pip
 
 WORKDIR /build
 ADD ./entrypoint.sh /entrypoint.sh
