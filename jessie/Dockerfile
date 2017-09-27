@@ -8,8 +8,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     git-buildpackage \
     git \
-    lsb-release \
-    python-pip
+    lsb-release
 
 WORKDIR /build
 ADD ./entrypoint.sh /entrypoint.sh

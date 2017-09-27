@@ -3,7 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Bluestar Solutions Sàrl, <info@blues2.ch>
 Build-Depends: debhelper (>= 7),
-               python (>= 2.7), python (<< 2.8), python-pip
+               python (>= 2.7), python (<< 2.8)
 Standards-Version: 3.9.4
 X-Python-Version: >= 2.7, << 2.8
 
