@@ -8,7 +8,6 @@ PIP=$(VENV)/bin/pip
 
 override_dh_auto_install:
 	python -m virtualenv --system-site-packages $(VENV)
-	$(PIP) install --upgrade pip
-	$(PIP) install --target=src/lib -r debian/requirements.txt
+	$(PIP) install --proxy `echo "$http_proxy"` --target=src/lib -r debian/requirements.txt
 	rm -r $(VENV)
 
