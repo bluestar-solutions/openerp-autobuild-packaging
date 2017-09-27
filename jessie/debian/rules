@@ -1,8 +1,13 @@
 #!/usr/bin/make -f
 
+VENV=./debian/venv
+PIP=$(VENV)/bin/pip
+
 %:
 	dh $@ --with python2
 
 override_dh_auto_install:
-	pip install --target=src/lib -r debian/requirements.txt
+	virtualenv --system-site-packages $(VENV)
+	$(PIP) install --target=src/lib -r debian/requirements.txt
+	rm -r $(VENV)
 

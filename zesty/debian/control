@@ -3,7 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Bluestar Solutions Sàrl, <info@blues2.ch>
 Build-Depends: debhelper (>= 7~), python-all
-Build-Depends-Indep: python-pip
+Build-Depends-Indep: python-virtualenv
 Standards-Version: 3.9.5
 X-Python-Version: >= 2.7
 
@@ -11,7 +11,7 @@ Package: openerp-autobuild
 Architecture: all
 Section: python
 Depends: python (>= 2.7~), python (<< 2.8~), ${misc:Depends},
-    python-pip, git, bzr, libpq-dev,
+    git, bzr, libpq-dev,
     python-psycopg2, python-dev, libldap2-dev,
     libsasl2-dev, libxml2-dev, libxslt-dev,
     python-jsonschema (>= 0.7~), python-argcomplete (>= 0.5~), libjpeg8-dev,
