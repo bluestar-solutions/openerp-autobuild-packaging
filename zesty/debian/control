@@ -2,20 +2,14 @@ Source: openerp-autobuild
 Section: python
 Priority: optional
 Maintainer: Bluestar Solutions Sàrl, <info@blues2.ch>
-Build-Depends: debhelper (>= 7~), python-all
-Build-Depends-Indep: python-virtualenv
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 X-Python-Version: >= 2.7
 
 Package: openerp-autobuild
 Architecture: all
 Section: python
-Depends: python (>= 2.7~), python (<< 2.8~), ${misc:Depends},
-    git, bzr, libpq-dev,
-    python-psycopg2, python-dev, libldap2-dev,
-    libsasl2-dev, libxml2-dev, libxslt-dev,
-    python-jsonschema (>= 0.7~), python-argcomplete (>= 0.5~), libjpeg8-dev,
-    zlib1g-dev
+Depends: ${misc:Depends}, ${python:Depends}, python-virtualenv
 Provides: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Conflicts: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Replaces: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
