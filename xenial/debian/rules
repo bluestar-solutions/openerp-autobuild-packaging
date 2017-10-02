@@ -1,5 +1,5 @@
 #!/usr/bin/make -f
 
 %:
-    dh $@ --with=python-support
+	dh $@ --with=python-support
 
