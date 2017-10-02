@@ -2,15 +2,14 @@ Source: openerp-autobuild
 Section: python
 Priority: optional
 Maintainer: Bluestar Solutions Sàrl, <info@blues2.ch>
-Build-Depends: debhelper (>= 7~)
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 X-Python-Version: >= 2.7
 
 Package: openerp-autobuild
 Architecture: all
 Section: python
-Depends: python2.7, ${misc:Depends},
-    git, bzr, libpq-dev
+Depends: ${misc:Depends}, ${python:Depends}, python-virtualenv
 Provides: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Conflicts: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Replaces: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
