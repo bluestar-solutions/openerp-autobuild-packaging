@@ -1,2 +1,2 @@
-/usr/lib/oebuild/openerp_autobuild.py  /usr/bin/oebuild
-/usr/lib/oebuild/openerp_autobuild.py  /usr/bin/openerp-autobuild
+/usr/lib/oebuild/openerp_autobuild.sh  /usr/bin/oebuild
+/usr/lib/oebuild/openerp_autobuild.sh  /usr/bin/openerp-autobuild

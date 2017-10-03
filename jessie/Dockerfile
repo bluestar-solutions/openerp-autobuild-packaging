@@ -8,9 +8,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     git-buildpackage \
     git \
-    lsb-release \
-    python-all \
-    python-virtualenv
+    lsb-release
 
 WORKDIR /build
 ADD ./entrypoint.sh /entrypoint.sh
