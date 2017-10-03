@@ -1,6 +1,6 @@
-openerp-autobuild (2.2~rc1) wheezy; urgency=medium
+openerp-autobuild (2.2) wheezy; urgency=medium
 
-  * Release 2.2~rc1
+  * Release 2.2
 
  -- Hervé Martinet <hmartinet@bss-laptop12>  Fri, 08 Sep 2017 10:25:31 +0200
 
