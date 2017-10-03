@@ -9,7 +9,10 @@ X-Python-Version: >= 2.7
 Package: openerp-autobuild
 Architecture: all
 Section: python
-Depends: ${misc:Depends}, ${python:Depends}, python-virtualenv
+Depends: ${misc:Depends}, git, bzr,
+    python2.7, python-virtualenv, python-argcomplete,
+    build-essential, python-dev, libxml2-dev, libxslt1-dev, zlib1g-dev,
+    libsasl2-dev, libldap2-dev, libssl-dev
 Provides: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Conflicts: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
 Replaces: openerp-autobuild-1.5, openerp-autobuild-1.6, openerp-autobuild-1.7
